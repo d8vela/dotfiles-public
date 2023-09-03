@@ -15,6 +15,12 @@ alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
 alias g git
+alias pv "fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+
+# extra aliases
+alias vik "vim ~/.config/fish/config.fish"
+alias resh "source ~/.config/fish/config.fish"
+
 command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim
