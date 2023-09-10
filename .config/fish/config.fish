@@ -16,6 +16,7 @@ alias ll "ls -l"
 alias lla "ll -A"
 alias g git
 alias pv "fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+alias top "htop"
 
 # extra aliases
 alias vik "vim ~/.config/fish/config.fish"
@@ -59,3 +60,6 @@ set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 if test -f $LOCAL_CONFIG
   source $LOCAL_CONFIG
 end
+
+zoxide init fish | source
+
